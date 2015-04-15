@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5px"
+        android:paddingRight="5px"
+        android:paddingTop="5px"
+        android:paddingBottom="0px"
+        android:textSize="16pt">
+
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="20pt"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="20pt"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="20pt"/>
+
+    </TableRow>
+
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5px"
+        android:paddingRight="5px"
+        android:paddingTop="5px"
+        android:paddingBottom="0px"
+        android:textSize="16pt">
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="20pt"/>
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="20pt"/>
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="20pt"/>
+
+
+    </TableRow>
+
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5px"
+        android:paddingRight="5px"
+        android:paddingTop="5px"
+        android:paddingBottom="0px"
+        android:textSize="16pt">
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="20pt"/>
+
+        <Button
+            android:id="@+id/button32"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="20pt"/>
+
+        <Button
+            android:id="@+id/button33"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="20pt"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25px"
+        android:paddingRight="5px"
+        android:paddingTop="20px">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/turn_of"
+            android:textColor="@color/blue"
+            android:textSize="12pt"
+            />
+        <TextView
+
+            android:id="@+id/playerTurnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player1"
+            android:textColor="@color/blue"
+            android:textSize="12pt"
+            />
+
+    </TableRow>
+
+</TableLayout>
