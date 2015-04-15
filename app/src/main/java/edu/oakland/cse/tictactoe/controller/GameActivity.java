@@ -3,9 +3,7 @@ package edu.oakland.cse.tictactoe.controller;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
@@ -70,13 +68,6 @@ public class GameActivity extends Activity implements Observer {
 
                         }
                     });
-                    button1.setOnTouchListener(new View.OnTouchListener(){
-                        @Override
-                        public boolean onTouch(View v,MotionEvent motionEvent) {
-                            gameController.play(ii, jj, button1);
-                            return true;
-                        }
-                    });
                 }
             }
         }
@@ -100,7 +91,7 @@ public class GameActivity extends Activity implements Observer {
 
         DialogFragment newFragment = GameOverAlertDialog.newInstance(
                 "Game Over...",msg,gameController);
-
+        newFragment.setCancelable(false);
         newFragment.show(getFragmentManager(),"game_over");
 
     }

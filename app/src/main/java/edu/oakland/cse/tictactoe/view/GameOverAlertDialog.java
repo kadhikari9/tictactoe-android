@@ -10,7 +10,8 @@ import edu.oakland.cse.tictactoe.R;
 import edu.oakland.cse.tictactoe.controller.GameController;
 
 /**
- * Created by kusu on 4/14/15.
+ * @author Kusum Adhikari
+ * @version 1.0
  */
 public class GameOverAlertDialog extends DialogFragment {
     private  String title;
@@ -31,13 +32,15 @@ public class GameOverAlertDialog extends DialogFragment {
             return new AlertDialog.Builder(getActivity())
 
                     .setTitle(title)
+                    .setCancelable(false)
                     .setMessage(message)
                     .setPositiveButton(R.string.ok_label,
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
 
-                                    gameController.restartGame();
+
                                     dialog.dismiss();
+                                    gameController.restartGame();
                                 }
                             }
                     )
